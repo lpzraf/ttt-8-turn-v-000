@@ -22,7 +22,7 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
-  input_to_index(input)
+  index = input_to_index(input)
   #using the if statement to check valid_move? 
   if valid_move?(board,0)
   #if the move is valid -move the player and display board
