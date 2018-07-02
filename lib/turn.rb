@@ -26,7 +26,7 @@ def turn(board)
   #using the if statement to check valid_move? 
   if valid_move?(board,0)
   #if the move is valid -move the player and display board
-  move()
+  move(board, index)
   else 
     turn(board)  
   end
