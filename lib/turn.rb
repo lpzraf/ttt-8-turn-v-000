@@ -24,7 +24,7 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   #using the if statement to check valid_move? 
-  if valid_move?(board,0)
+  if valid_move?(board,index)
   #if the move is valid -move the player and display board
   move(board, index)
   display_board(board)
