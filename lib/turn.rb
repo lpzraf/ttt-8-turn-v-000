@@ -7,11 +7,12 @@ def display_board(board)
 end
 
 
-# input_to_index and move method 
+# input_to_index 
 def input_to_index(input)
    input.to_i - 1
 end
 
+# move method 
 def move(board, index, current_player = "X")
   board[index] = current_player
 end
@@ -22,6 +23,7 @@ def turn(board)
   user_input = gets.strip
 end
 
+# valid_move? method
 def valid_move?(board, index)
   if index < 0  || index > 8
     return false
