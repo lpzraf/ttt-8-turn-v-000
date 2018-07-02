@@ -7,7 +7,7 @@ def display_board(board)
 end
 
 
-# code your input_to_index and move method here!
+# input_to_index and move method 
 def input_to_index(input)
    input.to_i - 1
 end
@@ -19,4 +19,7 @@ end
 # turn method
 def turn(board)
   puts "Please enter 1-9:"
+  user_input = gets.strip
+  
 end
+
