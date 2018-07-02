@@ -1,3 +1,4 @@
+# display_board
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -21,8 +22,15 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
-  input_to_index(input)
-  valid_move?(board,0)
+  index = input_to_index(input)
+  #using the if statement to check valid_move? 
+  if valid_move?(board,index)
+  #if the move is valid -move the player and display board
+  move(board, index)
+  display_board(board)
+  else 
+    turn(board)  
+  end
 end
 
 # valid_move? 
